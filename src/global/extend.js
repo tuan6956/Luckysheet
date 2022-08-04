@@ -897,8 +897,8 @@ function luckysheetextendtable(type, index, value, direction, sheetIndex) {
         file.data = d;
         file.config = cfg;
         file.calcChain = newCalcChain;
-        file.filter = newFilterObj.filter;
-        file.filter_select = newFilterObj.filter_select;
+        file.filter = newFilterObj ? newFilterObj.filter : null;
+        file.filter_select = newFilterObj ? newFilterObj.filter_select : null;
         file.luckysheet_conditionformat_save = newCFarr;
         file.luckysheet_alternateformat_save = newAFarr;
         file.dataVerification = newDataVerification;
@@ -1813,8 +1813,8 @@ function luckysheetdeletetable(type, st, ed, sheetIndex) {
         file.data = d;
         file.config = cfg;
         file.calcChain = newCalcChain;
-        file.filter = newFilterObj.filter;
-        file.filter_select = newFilterObj.filter_select;
+        file.filter = newFilterObj ? newFilterObj.filter : null;
+        file.filter_select = newFilterObj ? newFilterObj.filter_select : null;
         file.luckysheet_conditionformat_save = newCFarr;
         file.luckysheet_alternateformat_save = newAFarr;
         file.dataVerification = newDataVerification;
@@ -2359,8 +2359,8 @@ function luckysheetDeleteCell(type, str, edr, stc, edc, sheetIndex) {
         file.data = d;
         file.config = cfg;
         file.calcChain = newCalcChain;
-        file.filter = newFilterObj.filter;
-        file.filter_select = newFilterObj.filter_select;
+        file.filter = newFilterObj ? newFilterObj.filter : null;
+        file.filter_select = newFilterObj ? newFilterObj.filter_select : null;
         file.luckysheet_conditionformat_save = newCFarr;
         file.dataVerification = newDataVerification;
         file.hyperlink = newHyperlink;
